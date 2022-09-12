@@ -1,0 +1,4 @@
+import random
+
+lyst1 = [random.randint(1, 100) for _ in range(10)]
+lyst2 = [random.randint(1, 100) for _ in range(10)]
