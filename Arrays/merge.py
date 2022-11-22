@@ -11,6 +11,10 @@ def merge(lyst1, lyst2):
     j = 0
     length1 = len(lyst1)
     length2 = len(lyst2)
+    if not length1:
+        return lyst2
+    if not length2:
+        return lyst1
     while i < length1 and j < length2:
         if lyst1[i] < lyst2[j]:
             result.append(lyst1[i])
@@ -24,14 +28,4 @@ def merge(lyst1, lyst2):
         result.extend(lyst2[j:])
     return result
 
-print(merge(lyst1, lyst2
-
-
-
-
-
-
-
-
-
-))
+print(merge(lyst1, lyst2))
